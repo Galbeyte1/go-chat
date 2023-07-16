@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./backend
+    image: go-chat-app-backend
+    ports:
+      - "8080:8080"
+  frontend:
+    build: ./frontend
+    image: go-chat-app-frontend
+    ports:
+      - "3000:3000"
+  
